@@ -1,0 +1,28 @@
+<table>
+
+  <tr>
+    <td><b>CODIGO</b></td>
+    <td><b>NOMBRE</b></td>
+    <td><b>APELLIDOS</b></td>
+    <td><b>COMPAÑIA</b></td>
+  </tr>
+
+
+
+<% @soldado.each do |soldado| %>
+
+  <tr>
+    <td>
+      <%link_to soldado.codigo, soldado_path(soldado)%>
+    </td>
+
+    <td><%= soldado.codigo %></td>
+    <td><%link_to "EDITAR", edit_soldado_path(soldado)%></td>
+
+  </tr>
+
+<%end%>
+
+
+
+</table>

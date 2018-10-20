@@ -1,0 +1,9 @@
+<%= simple_form_for @soldado do |f| %>
+  <%= f.input :codigo %>
+  <%= f.input :nombre %>
+  <%= f.input :apellidos %>
+  <%= f.input :compañia %>
+  <%= f.button :submit %>
+<% end %>
+
+<%link_to "Ver todos", soldados_path%>

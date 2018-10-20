@@ -1,0 +1,27 @@
+<table>
+
+  <tr>
+    <td><b>CODIGO</b></td>
+    <td><b><%= @soldado.codigo %></b></td>
+  </tr>
+
+  <tr>
+    <td><b>NOMBRE</b></td>
+    <td><b><%= @soldado.nombre %></b></td>
+  </tr>
+
+  <tr>
+    <td><b>APELLIDOS</b></td>
+    <td><b><%= @soldado.apellidos %></b></td>
+  </tr>
+
+  <tr>
+    <td><b>COMPAÑIA</b></td>
+    <td><b><%= @soldado.compañia %></b></td>
+  </tr>
+
+</table>
+
+<%link_to "Crear soldado", new_soldado_path%>
+
+<%link_to "Ver todos", soldados_path%>

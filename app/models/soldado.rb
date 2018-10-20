@@ -1,0 +1,2 @@
+class Soldado < ApplicationRecord
+end
